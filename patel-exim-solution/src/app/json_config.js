@@ -6,6 +6,10 @@ import { IoEarthSharp } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiPhone } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+import { BsWhatsapp } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export const heroSectionDetails=[
     // {
@@ -172,3 +176,40 @@ export const productsData = [
       value: 'abc@xyz.com',
     }
   ]
+
+
+  export const socialIconsList = [
+    {
+        name: 'instagram',
+        icon: <FaInstagram size={20} color="#005f00" />,
+    },
+    {
+        name: 'facebook',
+        icon: <FaFacebookF size={20} color="#005f00" />,
+    },
+    {
+        name: 'whatsapp',
+        icon: <BsWhatsapp size={20} color="#005f00" />,
+    },
+    {
+        name: 'linkedin',
+        icon: <FaLinkedinIn size={20} color="#005f00" />,
+    }
+]
+
+export const footerQuickLinks = [
+  { label: 'About Us', value: 'about_us' },
+  { label: 'Contact Us', value: 'contact_us' },
+  { label: 'Certificates', value: 'certificates' },
+  { label: 'Our Products', value: 'our_products' },
+  { label: 'Privacy Policy', value: 'privacy_policy' },
+  { label: 'Term & conditions', value: 'term_conditions' }
+];
+
+export const footerTopProducts = [
+  { label: 'Bags', value: 'bags' },
+  { label: 'Rugs', value: 'rugs' },
+  { label: 'Storage Basket', value: 'storage_basket' },
+  { label: 'Office Storage', value: 'office_storage' },
+  { label: 'Covers', value: 'covers' }
+];
