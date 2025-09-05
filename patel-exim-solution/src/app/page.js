@@ -1,23 +1,19 @@
 import AboutUsInfoDetails from "@/components/AboutUsInfoDetails";
 import ChooseUs from "@/components/ChooseUsSection";
 import ContactUsForm from "@/components/ContactUsForm";
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
 import ProductsSection from "@/components/ProductSection";
 import TestimonialLIst from "@/components/TestimonialList";
 
 export default function Home() {
   return (
-    <>
-    <Navbar />
+    <div className="home-page-container">
     <HeroSection />
-    <AboutUsInfoDetails />
+    <AboutUsInfoDetails isFrom="home" />
     <ProductsSection />
-    <ChooseUs />
+    <ChooseUs headerTitle="Why Choose Patel Exim Solution" />
     <TestimonialLIst />
     <ContactUsForm />
-    <Footer />
-    </>
+    </div>
   );
 }

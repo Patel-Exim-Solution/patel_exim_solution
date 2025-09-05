@@ -1,10 +1,11 @@
 "use client";
 import { whyChoose } from "@/app/json_config";
 
-export default function ChooseUs() {
+export default function ChooseUs(props) {
+  const {headerTitle} = props || {};
   return (
-    <section className={'choose-us-section'}>
-      <h2 className={'section-title'}>Why Choose Patel Exim Solution</h2>
+    <section className={`choose-us-section`}>
+      <h2 className={'section-title'}>{headerTitle}</h2>
       <p className={'section-subtitle'}>Handcrafted by skilled artisans, our products reflect sustainability, quality, and care
       </p>
 
