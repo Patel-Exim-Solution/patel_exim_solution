@@ -1,5 +1,5 @@
 "use client";
-
+import { useRouter } from 'next/navigation';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import "swiper/css";
@@ -9,6 +9,11 @@ import { GoArrowRight } from "react-icons/go";
 import { heroSectionDetails } from "@/app/json_config";
 
 export default function HeroSection() {
+    const router = useRouter();
+
+    const handleExploreBtn = () => {
+        router.push('/products');
+    }
     return (
         <Swiper
             modules={[Autoplay]}
@@ -31,7 +36,7 @@ export default function HeroSection() {
                             <div className="right-container">
                                 <Image src={heroItem?.img2?.url} alt="Rolled Carpets" width={heroItem?.img2?.width} height={heroItem?.img2?.height}
                                 />
-                                <p className="hero-action-button flex items-center gap-[10]">{heroItem?.buttonText} <GoArrowRight size={20} /></p>
+                                <p className="hero-action-button flex items-center gap-[10]" onClick={handleExploreBtn} >{heroItem?.buttonText} <GoArrowRight size={20} /></p>
                             </div>
                         </div>
                     </div>

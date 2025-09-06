@@ -18,7 +18,7 @@ const navbarList = [
         value: 'Contact Us',
     },
     {
-        key: 'product',
+        key: 'products',
         value: 'Products'
     },
 ]

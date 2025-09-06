@@ -1,5 +1,7 @@
 import { Poppins, Syne } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import "./globals.scss";
+import "leaflet/dist/leaflet.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -29,6 +31,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Toaster position="bottom-left" reverseOrder={false} />
       </body>
     </html>
   );

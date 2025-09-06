@@ -1,9 +1,14 @@
+"use client";
 import Image from "next/image";
-import { GoArrowRight } from "react-icons/go";
+import { useRouter } from "next/navigation";
 import Button from "./Button";
 
 export default function AboutUsInfoDetails(props) {
     const { isFrom, imgPath = '' } = props || {};
+    const router = useRouter();
+    const handleExploreMore = () => {
+        router.push('/products')
+    }
     return (
         <div className="about-us-info-details-section flex items-center">
             <div className="details-section">
@@ -19,7 +24,7 @@ export default function AboutUsInfoDetails(props) {
                         </p>
                     </div>
                 )}
-                {isFrom === "home" ? <Button label="Explore More" isIconDisplay btnClassName="about-action-btn secondary" /> : null}
+                {isFrom === "home" ? <Button label="Explore More" onClick={handleExploreMore} isIconDisplay btnClassName="about-action-btn secondary" /> : null}
             </div>
             <div className="img-section">
 

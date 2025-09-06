@@ -90,6 +90,62 @@ export const productsData = [
       imgUrl: "/images/products/purse.png",
       width: 288,
       height:380,
+    },
+    {
+      id: 5,
+      name: "Storage Basket",
+      imgUrl: "/images/products/Storage_basket.png",
+      width: 288,
+      height:380,
+    },
+    {
+      id: 6,
+      name: "Pillow Cover",
+      imgUrl: "/images/products/Pillow_cover.png",
+      width: 288,
+      height:380,
+    },
+    {
+      id: 7,
+      name: "Table Mat",
+      imgUrl: "/images/products/rug.png",
+      width: 288,
+      height:380,
+    },
+    {
+      id: 8,
+      name: "Curtain",
+      imgUrl: "/images/products/purse.png",
+      width: 288,
+      height:380,
+    },
+    {
+      id: 9,
+      name: "Storage Basket",
+      imgUrl: "/images/products/Storage_basket.png",
+      width: 288,
+      height:380,
+    },
+    {
+      id: 10,
+      name: "Pillow Cover",
+      imgUrl: "/images/products/Pillow_cover.png",
+      width: 288,
+      height:380,
+    },
+    {
+      id: 11,
+      name: "Table Mat",
+      imgUrl: "/images/products/rug.png",
+      width: 288,
+      height:380,
+    },
+    {
+      id: 12,
+      name: "Curtain",
+      imgUrl: "/images/products/purse.png",
+      width: 288,
+      height:380,
     }
   ]
   
@@ -198,10 +254,10 @@ export const productsData = [
 ]
 
 export const footerQuickLinks = [
-  { label: 'About Us', value: 'about_us' },
-  { label: 'Contact Us', value: 'contact_us' },
+  { label: 'About Us', value: 'about' },
+  { label: 'Contact Us', value: 'contact' },
   { label: 'Certificates', value: 'certificates' },
-  { label: 'Our Products', value: 'our_products' },
+  { label: 'Our Products', value: 'products' },
   { label: 'Privacy Policy', value: 'privacy_policy' },
   { label: 'Term & conditions', value: 'term_conditions' }
 ];

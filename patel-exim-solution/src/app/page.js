@@ -13,7 +13,7 @@ export default function Home() {
     <ProductsSection />
     <ChooseUs headerTitle="Why Choose Patel Exim Solution" />
     <TestimonialLIst />
-    <ContactUsForm />
+    <ContactUsForm isFrom="home"/>
     </div>
   );
 }

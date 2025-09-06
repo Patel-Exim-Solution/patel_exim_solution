@@ -8,6 +8,7 @@
   --secondary-text-color: #4A4E69;
   --primary-color: #005F00;
   --primary-op-10: rgba(0,95,0,0.1);
+  --primary-op-05: rgba(0,95,0,0.05);
   --primary-op-30: rgba(0,95,0,0.3);
 }
 
@@ -69,6 +70,14 @@ body {
   }
   &.about-action-btn{
     margin-top: 40px;
+  }
+  &.disable-btn{
+    opacity: 0.6;
+    cursor: not-allowed;
+    &:hover{
+      background-color: var(--primary-color);
+      color: #ffffff;
+    }
   }
 }
 
@@ -344,33 +353,36 @@ max-width: 370px;
         }
       }
     }
-    .form-fields-group{
+    .contact-form-container{
       width: 100%;
       max-width: 530px;
-      .input-fields{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        .form-field{
-          padding: 10px 16px;
-          border: 1px solid var(--primary-color);
-          background-color: transparent;
-          outline: none;
-          font-size: 14px;
-          font-weight: normal;
-          line-height: 20px;
-          &::placeholder{
-            color: var(--secondary-text-color);
-            opacity: 0.8;
+      .form-fields-group{
+        width: 100%;
+        .input-fields{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .form-field{
+            padding: 10px 16px;
+            border: 1px solid var(--primary-color);
+            background-color: transparent;
+            outline: none;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            &::placeholder{
+              color: var(--secondary-text-color);
+              opacity: 0.8;
+            }
           }
         }
-      }
-      .form-submit-btn{
-        width: 100%;
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .form-submit-btn{
+          width: 100%;
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
@@ -549,6 +561,30 @@ margin-top: 40px;
 display: flex;
 align-items: center;
 gap: 24px;
+    }
+  }
+}
+.products-page-container{
+  border-bottom: 1px solid var(--primary-text-color);
+  .product-list-grid{
+    background-color: var(--primary-op-05);
+    padding: 80px 96px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    justify-content: center;
+    .product-name{
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 8px;
+      text-align: left;
+    }
+  }
+}
+.contact-page-container{
+  .contact-us-section{
+    .contact-form-container{
+      margin-top: 0px !important;
     }
   }
 }

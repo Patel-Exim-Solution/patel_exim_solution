@@ -1,9 +1,19 @@
+"use client";
+import { useRouter } from "next/navigation";
 import AboutUsInfoDetails from "@/components/AboutUsInfoDetails";
 import Button from "@/components/Button";
 import ChooseUs from "@/components/ChooseUsSection";
 import HeaderPageTitle from "@/components/HeaderPageTitle";
 
 export default function About(){
+    const router = useRouter();
+
+    const handleGetInTouch = () => {
+        router.push('/contact');
+    }
+    const handleProductPage = () => {
+        router.push('/products')
+    }
     return (
         <div className="about-page-container">
             <HeaderPageTitle title={'About Us'} parentPage={'Home'} />
@@ -20,8 +30,8 @@ export default function About(){
                 Together, let's build a more sustainable and responsible global marketplace—one shipment at a time.
                 </p>
                 <div className="action-btn-group">
-                <Button label="Get In Touch"  btnClassName="get-in-touch-action-btn primary" />
-                <Button label="View Our Product"  btnClassName="view-product-action-btn secondary" />
+                <Button label="Get In Touch"  btnClassName="get-in-touch-action-btn primary" onClick={handleGetInTouch} />
+                <Button label="View Our Product"  btnClassName="view-product-action-btn secondary" onClick={handleProductPage} />
                 </div>
             </div>
         </div>
