@@ -10,7 +10,7 @@ export default function Home() {
     <div className="home-page-container">
     <HeroSection />
     <AboutUsInfoDetails isFrom="home" />
-    <ProductsSection />
+    <ProductsSection isFrom="home" />
     <ChooseUs headerTitle="Why Choose Patel Exim Solution" />
     <TestimonialLIst />
     <ContactUsForm isFrom="home"/>
