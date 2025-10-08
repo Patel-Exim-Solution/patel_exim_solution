@@ -11,7 +11,7 @@ export default function ProductsSection(props) {
     router.push('/products')
   }
   return (
-    <section className={'product-section'}>
+    <section className={'product-section p-l-r-40 p-l-r-60'}>
       <h2 className={'section-title'}>Our Products</h2>
       <p className={'section-subtitle'}>Handcrafted by skilled artisans, our products reflect sustainability, quality, and care.</p>
       <div className={'product-list-grid'}>

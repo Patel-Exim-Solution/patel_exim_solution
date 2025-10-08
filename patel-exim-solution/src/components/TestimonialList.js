@@ -26,7 +26,7 @@ export default function TestimonialLIst() {
         return <div style={{ display: "flex", gap: "4px" }}>{stars}</div>;
     }
     return (
-        <section className={'testimonial-section'}>
+        <section className={'testimonial-section p-l-r-40 p-l-r-60'}>
             <h2 className={'section-title'}>Why Customers Trust Patel Exim Solutions</h2>
             <p className={'section-subtitle'}>Hear how our handcrafted, sustainable products make a difference.</p>
 

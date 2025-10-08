@@ -10,7 +10,7 @@ export default function AboutUsInfoDetails(props) {
         router.push('/products')
     }
     return (
-        <div className="about-us-info-details-section flex items-center">
+        <div className="about-us-info-details-section p-l-r-40 p-l-r-60 flex items-center">
             <div className="details-section">
                 {isFrom === 'home' ? <p className="header-label secondary-text-color">About Us</p> : null}
                 <h2 className="title primary-text">Welcome to Patel Exim Solution</h2>
