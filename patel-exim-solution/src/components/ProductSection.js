@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { productsData } from "@/app/json_config";
+import { productsLandingPageData } from "@/app/json_config";
 import Button from "./Button";
 
 export default function ProductsSection(props) {
@@ -11,11 +11,11 @@ export default function ProductsSection(props) {
     router.push('/products')
   }
   return (
-    <section className={'product-section p-l-r-40 p-l-r-60'}>
+    <section className={'product-section p-l-r-20 p-l-r-40 p-l-r-60'}>
       <h2 className={'section-title'}>Our Products</h2>
       <p className={'section-subtitle'}>Handcrafted by skilled artisans, our products reflect sustainability, quality, and care.</p>
       <div className={'product-list-grid'}>
-        {productsData.map((product, index) =>  index < 4 ? (
+        {productsLandingPageData.map((product, index) => (
           <div key={product.id} className={'product-card'}>
             <Image
               src={product.imgUrl}
@@ -25,8 +25,8 @@ export default function ProductsSection(props) {
               className={'product-img'}
             />
             <h3 className={'product-name'}>{product.name}</h3>
-          </div> 
-        ) : null)}
+          </div>
+        ))}
       </div>
       <Button onClick={handleCollection} label="View All Collections" isIconDisplay btnClassName="product-action-btn secondary" />
     </section>

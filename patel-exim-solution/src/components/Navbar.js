@@ -73,11 +73,11 @@ export default function Navbar() {
 
     return (
         <nav className="navbar-container">
-            <div className="top-navbar flex items-center gap-[24] justify-end px-[96] p-l-r-40 p-l-r-60 py-[23]">
+            <div className="top-navbar flex items-center gap-[24] justify-end px-[96] p-l-r-20 p-l-r-40 p-l-r-60 py-[23]">
                 <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><MdPhoneEnabled size={20} /> 93482 34224</span>
                 <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><MdEmail size={20} /> google@gmail.com</span>
             </div>
-            <div className='navbar px-[96] p-l-r-40 p-l-r-60 py-[12] flex items-center justify-between'>
+            <div className='navbar px-[96] p-l-r-20 p-l-r-40 p-l-r-60 py-[12] flex items-center justify-between'>
                 <div className='img-container'>
                     <Image src="/LOGO.png" alt="Company Logo"
                         width={80}

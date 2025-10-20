@@ -8,7 +8,7 @@ export default function HeaderPageTitle(props){
             <h1 className="page-title">{title}</h1>
             <p className="page-breadcrume-detail">
                 
-            <Link href={`/${parentPage?.toLowerCase() === 'home' ? '' : parentPage}`}>{parentPage}</Link>
+            <Link href={`/${parentPage?.toLowerCase() === 'home' ? '' : parentPage?.toLowerCase()}`}>{parentPage}</Link>
              {` > ${title}`}
                 </p>
             </div>
