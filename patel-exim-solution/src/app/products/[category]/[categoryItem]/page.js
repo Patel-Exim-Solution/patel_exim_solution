@@ -2,7 +2,7 @@
 import HeaderPageTitle from "@/components/HeaderPageTitle";
 import Image from "next/image";
 import { productSubCategoriesDetails } from "../../../json_config";
-import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 export default function CategoryItemsPage({ params }) {
     const { category, categoryItem } = params;
@@ -13,6 +13,7 @@ export default function CategoryItemsPage({ params }) {
         <div className="products-page-container">
             <HeaderPageTitle title={subCategoryName || "Products"} parentPage={categoryItemDetails.categoryName} parentPageLink={`/products/${category}`} />
             <div className="category-item-details-container">
+                <BackButton parentPageLink={`/products/${category}`} />
                 <p className="category-item-description">{categoryItemDetails.description}</p>
                 <div className="features-list-container">
                     <div className="features-list-items">

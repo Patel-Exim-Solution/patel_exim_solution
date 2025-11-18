@@ -8,21 +8,23 @@ export default function Products() {
     return (
         <div className="products-page-container">
             <HeaderPageTitle title={'Our Products'} parentPage={'Home'} />
-            <div className="product-list-grid">
-                {productCategories.map((product) => (
-                    <Link key={product.id} href={`/products/${product?.categoryId}`} className={'product-card'}>
-                        <div className="product-image-wrapper">
-                            <Image
-                                src={product.imageUrl}
-                                alt={product.name}
-                                width={product.width}
-                                height={product.height}
-                                className={'product-page-img product-img'}
-                            />
-                            <h3 className={'product-name'}>{product.name}</h3>
-                        </div>
-                    </Link>
-                ))}
+            <div className="product-list-container">
+                <div className="product-list-grid">
+                    {productCategories.map((product) => (
+                        <Link key={product.id} href={`/products/${product?.categoryId}`} className={'product-card'}>
+                            <div className="product-image-wrapper">
+                                <Image
+                                    src={product.imageUrl}
+                                    alt={product.name}
+                                    width={product.width}
+                                    height={product.height}
+                                    className={'product-page-img product-img'}
+                                />
+                                <h3 className={'product-name'}>{product.name}</h3>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
             </div>
         </div>
     )
