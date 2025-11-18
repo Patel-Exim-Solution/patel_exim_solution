@@ -1,12 +1,18 @@
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
+// /utils/fixLeafletIcon.js
+// DO NOT run this at module top-level if it touches `window` or `L`
+export function setupLeafletIcon() {
+  if (typeof window === "undefined") return; // server-safe guard
 
-delete L.Icon.Default.prototype._getIconUrl;
+  // lazy import Leaflet only in the browser (optional)
+  const L = require("leaflet");
 
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-});
+  // set default icon options (example)
+  delete L.Icon.Default.prototype._getIconUrl;
+  L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+    iconUrl: require("leaflet/dist/images/marker-icon.png"),
+    shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+  });
 
-export default L;
+  return L;
+}
