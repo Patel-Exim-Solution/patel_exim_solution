@@ -625,7 +625,7 @@ export const productSubCategoriesDetails = {
       },
       {
         imageId: 10,
-        imageUrl: "/product_assets/1_1/1_1_1/new107.jpeg",
+        imageUrl: "/product_assets/1_1/1_1_1/NEW107.jpeg",
       },
     ],
     items: [
