@@ -17,14 +17,16 @@ export default function ProductsSection(props) {
       <div className={'product-list-grid'}>
         {productsLandingPageData.map((product, index) => (
           <div key={product.id} className={'product-card'}>
-            <Image
-              src={product.imgUrl}
-              alt={product.name}
-              width={product.width}
-              height={product.height}
-              className={'product-img'}
-            />
-            <h3 className={'product-name'}>{product.name}</h3>
+            <div className="product-image-wrapper">
+              <Image
+                src={product.imgUrl}
+                alt={product.name}
+                width={product.width}
+                height={product.height}
+                className={'product-img'}
+              />
+              <h3 className={'product-name'}>{product.name}</h3>
+            </div>
           </div>
         ))}
       </div>

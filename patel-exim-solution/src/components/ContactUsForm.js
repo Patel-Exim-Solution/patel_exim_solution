@@ -55,7 +55,7 @@ export default function ContactUsForm(props) {
     };
 
     return (
-        <section className={'contact-us-section p-l-r-20 p-l-r-40 p-l-r-60'}>
+        <section className={`contact-us-section p-l-r-20 p-l-r-40 p-l-r-60 ${isFrom === 'home' ? 'home-contact-us-section' : ''}`}>
             {isFrom === 'home' ? (
                 <>
                     <h2 className={'section-title'}>Contact Us</h2>

@@ -34,6 +34,16 @@ export default function About(){
                 <Button label="View Our Product"  btnClassName="view-product-action-btn secondary" onClick={handleProductPage} />
                 </div>
             </div>
+            <div className="why-we-exist-container">
+                    <h3 className="why-we-exist-title">Why we exist</h3>
+                    <p className="why-we-exist-description">
+                    The world produces over 300 million tons of plastic every year — nearly equivalent to the weight of the entire human population. A major contributor to this crisis? Single-use plastic packaging.
+                    </p>
+                    <p className="why-we-exist-description">
+                    At PATEL EXIM SOLUTIONS, we refuse to stand by. We exist to fight plastic pollution, empower communities, and inspire a shift toward a greener tomorrow.
+                    Our Jute bags aren't just products — they're solutions. </p>
+                    <p className="why-we-exist-description">Each one is a pledge to protect forests, clean oceans, and support ethical labor. Every stitch carries the hopes of a cleaner, fairer, and more beautiful world.</p>
+                </div>
         </div>
     )
 }

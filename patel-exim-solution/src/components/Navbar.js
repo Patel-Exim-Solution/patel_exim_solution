@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from 'react';
 // import { FaPhone } from 'react-icons/fa';
 import { MdPhoneEnabled } from "react-icons/md";
 import { MdEmail } from 'react-icons/md';
-import { HiMenuAlt3 } from 'react-icons/hi';
+import { HiMenuAlt3, HiPhone } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 
 const navbarList = [
@@ -74,8 +74,8 @@ export default function Navbar() {
     return (
         <nav className="navbar-container">
             <div className="top-navbar flex items-center gap-[24] justify-end px-[96] p-l-r-20 p-l-r-40 p-l-r-60 py-[23]">
-                <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><MdPhoneEnabled size={20} /> 93482 34224</span>
-                <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><MdEmail size={20} /> google@gmail.com</span>
+                <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><HiPhone size={20} color="#22223B" /> +91 95101 24299</span>
+                <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><MdEmail size={20} /> ptlexims1@gmail.com</span>
             </div>
             <div className='navbar px-[96] p-l-r-20 p-l-r-40 p-l-r-60 py-[12] flex items-center justify-between'>
                 <div className='img-container'>
@@ -138,11 +138,11 @@ export default function Navbar() {
                 <div className="sidebar-contact-info">
                     <div className='sidebar-contact-item'>
                         <MdPhoneEnabled size={20} />
-                        <span>93482 34224</span>
+                        <span>951 012 4299</span>
                     </div>
                     <div className='sidebar-contact-item'>
                         <MdEmail size={20} />
-                        <span>google@gmail.com</span>
+                        <span>ptlexims1@gmail.com</span>
                     </div>
                 </div>
             </div>
