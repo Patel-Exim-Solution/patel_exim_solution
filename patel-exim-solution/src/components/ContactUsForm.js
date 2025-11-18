@@ -1,4 +1,3 @@
-"use client";
 
 import { useState } from "react";
 import { addressInfo } from "@/app/json_config";
