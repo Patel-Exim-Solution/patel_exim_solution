@@ -1,6 +1,11 @@
+import dynamic from "next/dynamic";
 import ContactUsForm from "@/components/ContactUsForm";
 import HeaderPageTitle from "@/components/HeaderPageTitle";
-import MyMap from "@/components/MyMap";
+
+// Dynamically import MyMap with SSR disabled to avoid window is not defined error
+const MyMap = dynamic(() => import("@/components/MyMap"), {
+    ssr: false,
+});
 
 export default function Contact(){
     return (

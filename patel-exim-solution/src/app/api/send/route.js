@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend('re_XCupdyse_CZh6f3zTkiWxEr2pU86KUTCn');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Helper for consistent JSON responses
 const jsonResponse = (data, status = 200) =>
@@ -20,8 +20,8 @@ export async function POST(req) {
         }
 
         const data = await resend.emails.send({
-            from: "Acme <onboarding@resend.dev>",
-            to: "web.mihir017@gmail.com", // your inbox where you want to receive
+            from: process.env.RESEND_FROM_EMAIL || "Acme <onboarding@resend.dev>",
+            to: process.env.RESEND_TO_EMAIL || "ptlexims1@gmail.com", // your inbox where you want to receive
             subject: "📩 New Contact Form Message",
             html: `
               <h2>New Contact Message</h2>
