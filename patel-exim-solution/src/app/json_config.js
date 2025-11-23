@@ -226,7 +226,7 @@ export const addressInfo = [
   {
     icon: <MdEmail size={24} color="#005F00" />,
     label: 'Email',
-    value: 'ptlexims1@gmail.com',
+    value: 'info@pateleximsolution.com',
   }
 ]
 
@@ -235,18 +235,12 @@ export const socialIconsList = [
   {
     name: 'instagram',
     icon: <FaInstagram size={20} color="#005f00" />,
-  },
-  {
-    name: 'facebook',
-    icon: <FaFacebookF size={20} color="#005f00" />,
-  },
-  {
-    name: 'whatsapp',
-    icon: <BsWhatsapp size={20} color="#005f00" />,
+    url: 'https://www.instagram.com/pateleximsolution/',
   },
   {
     name: 'linkedin',
     icon: <FaLinkedinIn size={20} color="#005f00" />,
+    url: 'https://www.linkedin.com/in/patel-exim-solutions-66518a376/',
   }
 ]
 
@@ -1066,12 +1060,6 @@ export const productSubCategoriesDetails = {
     { imageId: 6, imageUrl: "/product_assets/1_4/1_4_1/new115.jpeg" },
     { imageId: 7, imageUrl: "/product_assets/1_4/1_4_1/new117.jpeg" },
     { imageId: 8, imageUrl: "/product_assets/1_4/1_4_1/new118.jpeg" },
-    { imageId: 9, imageUrl: "/product_assets/1_4/1_4_1/new121.jpeg" },
-    { imageId: 10, imageUrl: "/product_assets/1_4/1_4_1/new122.jpeg" },
-    { imageId: 11, imageUrl: "/product_assets/1_4/1_4_1/new123.jpeg" },
-    { imageId: 12, imageUrl: "/product_assets/1_4/1_4_1/new124.jpeg" },
-    { imageId: 13, imageUrl: "/product_assets/1_4/1_4_1/new125.jpeg" },
-    { imageId: 14, imageUrl: "/product_assets/1_4/1_4_1/new126.jpeg" },
   ],
   items: [
     "Jute sacks / bags (natural burlap sacks)",
@@ -1105,7 +1093,14 @@ export const productSubCategoriesDetails = {
   categoryName: "Agricultural Use",
   imageWidth: 288,
   imageHeight: 380,
-  images: [],
+  images: [
+    { imageId: 1, imageUrl: "/product_assets/1_5/1_5_1/new121.jpeg" },
+    { imageId: 2, imageUrl: "/product_assets/1_5/1_5_1/new122.jpeg" },
+    { imageId: 3, imageUrl: "/product_assets/1_5/1_5_1/new123.jpeg" },
+    { imageId: 4, imageUrl: "/product_assets/1_5/1_5_1/new124.jpeg" },
+    { imageId: 5, imageUrl: "/product_assets/1_5/1_5_1/new125.jpeg" },
+    { imageId: 6, imageUrl: "/product_assets/1_5/1_5_1/new126.jpeg" },
+  ],
   items: [
     "Jute plant pot coverings",
     "Jute tree guards / sapling protectors",
@@ -1137,7 +1132,19 @@ export const productSubCategoriesDetails = {
   categoryName: "Giftware & Promotional Item",
   imageWidth: 288,
   imageHeight: 380,
-  images: [],
+  images: [
+    { imageId: 1, imageUrl: "/product_assets/1_6/1_6_1/new27.jpg" },
+    { imageId: 2, imageUrl: "/product_assets/1_6/1_6_1/new28.jpg" },
+    { imageId: 3, imageUrl: "/product_assets/1_6/1_6_1/new29.jpg" },
+    { imageId: 4, imageUrl: "/product_assets/1_6/1_6_1/new32.jpg" },
+    { imageId: 5, imageUrl: "/product_assets/1_6/1_6_1/new33.jpg" },
+    { imageId: 6, imageUrl: "/product_assets/1_6/1_6_1/new34.jpg" },
+    { imageId: 7, imageUrl: "/product_assets/1_6/1_6_1/new35.jpg" },
+    { imageId: 9, imageUrl: "/product_assets/1_6/1_6_1/new37.jpg" },
+    { imageId: 10, imageUrl: "/product_assets/1_6/1_6_1/new38.jpg" },
+    { imageId: 11, imageUrl: "/product_assets/1_6/1_6_1/new39.jpg" },
+    { imageId: 13, imageUrl: "/product_assets/1_6/1_6_1/new41.jpg" },
+  ],
   items: [
     "Jute greeting card sleeves",
     "Jute event souvenir pouches",
@@ -1167,7 +1174,13 @@ export const productSubCategoriesDetails = {
   categoryName: "Giftware & Promotional Item",
   imageWidth: 288,
   imageHeight: 380,
-  images: [],
+  images: [
+    { imageId: 1, imageUrl: "/product_assets/1_6/1_6_2/new127.jpeg" },
+    { imageId: 1, imageUrl: "/product_assets/1_6/1_6_2/new128.jpeg" },
+    { imageId: 4, imageUrl: "/product_assets/1_6/1_6_2/new129.jpeg" },
+    { imageId: 5, imageUrl: "/product_assets/1_6/1_6_2/new130.jpeg" },
+    { imageId: 6, imageUrl: "/product_assets/1_6/1_6_2/new131.jpeg" },
+  ],
   items: [
     "Jute twine / ropes / cords",
     "Jute yarn / threads",
@@ -1343,7 +1356,7 @@ export const productCategoriesDetails = {
     {
       id: 1_31,
       name: "Office & Stationery",
-      imageUrl: "/product_assets/1_3/new102.jpeg",
+      imageUrl: "/product_assets/1_3/NEW102.jpeg",
       width: 288,
       height: 380,
       categoryName: "Office & Industrial Utilities",

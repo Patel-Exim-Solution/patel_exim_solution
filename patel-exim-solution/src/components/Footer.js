@@ -15,8 +15,8 @@ export default function Footer() {
                     Patel Exim Solutions in eco-conscious exports—from jute and organic cotton to vegan leather accessories—crafted with care for people and the planet.
                 </p>
                 <div className="social-icon-links">
-                    {socialIconsList.map((item) => (
-                        <span className="social-icon-item">{item.icon}</span>
+                    {socialIconsList.map((item, index) => (
+                        <span key={index} className="social-icon-item"><a target="_blank" href={item.url}>{item.icon}</a></span>
                     ))}
                 </div>
             </div>
@@ -58,9 +58,9 @@ export default function Footer() {
                         </li>
                     ))}
                 </ul>
-                <Image className="brand-scanner-img" src="/images/brand_scanner.png" alt="Company Scanner"
+                {/* <Image className="brand-scanner-img" src="/images/brand_scanner.png" alt="Company Scanner"
                     width={120}
-                    height={120} />
+                    height={120} /> */}
             </div>
             </div>
             <hr className="footer-bottom-line" />

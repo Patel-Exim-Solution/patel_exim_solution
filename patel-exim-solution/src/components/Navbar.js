@@ -75,7 +75,7 @@ export default function Navbar() {
         <nav className="navbar-container">
             <div className="top-navbar flex items-center gap-[24] justify-end px-[96] p-l-r-20 p-l-r-40 p-l-r-60 py-[23]">
                 <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><HiPhone size={20} color="#22223B" /> +91 95101 24299</span>
-                <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><MdEmail size={20} /> ptlexims1@gmail.com</span>
+                <span className='flex items-center gap-[6] text-sm tracking-[0.6] font-light primary-text-color'><MdEmail size={20} /> info@pateleximsolution.com</span>
             </div>
             <div className='navbar px-[96] p-l-r-20 p-l-r-40 p-l-r-60 py-[12] flex items-center justify-between'>
                 <div className='img-container'>
@@ -142,7 +142,7 @@ export default function Navbar() {
                     </div>
                     <div className='sidebar-contact-item'>
                         <MdEmail size={20} />
-                        <span>ptlexims1@gmail.com</span>
+                        <span>info@pateleximsolution.com</span>
                     </div>
                 </div>
             </div>

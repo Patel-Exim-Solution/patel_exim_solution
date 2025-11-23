@@ -21,7 +21,7 @@ export async function POST(req) {
 
         const data = await resend.emails.send({
             from: process.env.RESEND_FROM_EMAIL || "Acme <onboarding@resend.dev>",
-            to: process.env.RESEND_TO_EMAIL || "ptlexims1@gmail.com", // your inbox where you want to receive
+            to: process.env.RESEND_TO_EMAIL || "info@pateleximsolution.com", // your inbox where you want to receive
             subject: "📩 New Contact Form Message",
             html: `
               <h2>New Contact Message</h2>
